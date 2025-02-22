@@ -7,3 +7,5 @@
 3) GUI Version with save file (main-ui-save.pyw, DogAgeCalculator-UI-save.exe) (saves dob of dog to dob.pkl so you dont have to type it each time)
 
 Binaries are available in the Releases section.
+
+# NOTE: Based on aging of small breeds like lhasa apso
