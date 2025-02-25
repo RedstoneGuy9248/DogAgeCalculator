@@ -177,5 +177,7 @@ cython_debug/
 ..idea
 .build/
 ..idea/
+.idea
+.idea/
 
 
