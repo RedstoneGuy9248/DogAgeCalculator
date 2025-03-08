@@ -12,7 +12,7 @@ Binaries are available in the Releases section.
 
 To compile .py files to exe, Run:
 ```
-pyinstaller --onefile --no-console main-ui.pyw
-pyinstaller --onefile --no-console main-ui-save.pyw
+pyinstaller --onefile --noconsole main-ui.pyw
+pyinstaller --onefile --noconsole main-ui-save.pyw
 pyinstaller --onefile main-cli.py
 ```
