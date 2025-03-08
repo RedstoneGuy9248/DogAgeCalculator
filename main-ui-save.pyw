@@ -57,10 +57,9 @@ def getAge(d):
 
     dm = int(dm)
     dy = int(dy)
-    global dogmonthstr
-    global dogyearstr
     dogyearstr = str("{} Dog Years".format(dy))
     dogmonthstr = str("{} Dog Months".format(dm))
+    return dogyearstr, dogmonthstr
 
 def print_dob():
     for widget in root.winfo_children():
@@ -75,7 +74,7 @@ def print_dob():
             pickle.dump(dob, file)
 
     d = (today - dob).days
-    getAge(d)
+    dogyearstr, dogmonthstr = getAge(d)
     ylabel = Label(root, text=dogyearstr, bg="#222222", fg="#F0F4F8", font="Inter")
     mlabel = Label(root, text=dogmonthstr, bg="#222222", fg="#F0F4F8", font="Inter")
     rgcredit = Label(root, text="Made By @RedstoneGuy9248 (github)", bg="#222222", fg="#F0F4F8",
