@@ -9,3 +9,10 @@
 Binaries are available in the Releases section.
 
 # NOTE: Based on aging of small breeds like lhasa apso
+
+To compile .py files to exe, Run:
+```
+pyinstaller --onefile --noconsole main-ui.pyw
+pyinstaller --onefile --noconsole main-ui-save.pyw
+pyinstaller --onefile main-cli.py
+```
