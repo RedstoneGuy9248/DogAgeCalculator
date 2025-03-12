@@ -27,6 +27,7 @@ def error_invalid():
     ErrorInvalidButton.pack()
 
 def getAge(d):
+    dy, y, dm, m = 0, 0, 0, 0
     if (d > 365.25):
         dy = 15
         y = 1
@@ -52,8 +53,8 @@ def getAge(d):
         dm = float(m * 4)
 
     if (dm > 12):
-        dy = dy + (dm // 12)
-        dm = dm % 12
+        dy += (dm // 12)
+        dm %= 12
 
     dm = int(dm)
     dy = int(dy)

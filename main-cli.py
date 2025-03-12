@@ -2,6 +2,7 @@ from datetime import datetime
 today = datetime.today()
 print("Dog Age Calculator!")
 print("Made By @RedstoneGuy9248 (Github)\n")
+d, dy, y, dm, m = 0, 0, 0, 0, 0
 while True:
     try:
         dobStr = input("Enter your dog's date of birth in the format: DD/MM/YYYY: ")
@@ -48,8 +49,8 @@ elif(y > 1):
 
 
 if (dm > 12):
-    dy = dy + (dm // 12)
-    dm = dm % 12
+    dy += (dm // 12)
+    dm %= 12
 
 dm = int(dm)
 dy = int(dy)
